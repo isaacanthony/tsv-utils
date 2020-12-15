@@ -12,3 +12,5 @@ The following is from Ebay's tsv-utils [README](https://github.com/eBay/tsv-util
 ## Usage
 * `make build`
 * `make start`
+  * `cd iris`
+  * `make interim/iris.tsv`
