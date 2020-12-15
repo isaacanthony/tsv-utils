@@ -11,4 +11,4 @@ The following is from Ebay's tsv-utils [README](https://github.com/eBay/tsv-util
 
 ## Usage
 * `make build`
-* `make run cmd=help`
+* `make start`

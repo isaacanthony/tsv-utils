@@ -1,8 +1,11 @@
-# Exclude data files.
+*
 *.csv
 *.tsv
-
-# Include sample scripts only.
-bin/*
-!bin/iris
-!bin/help.sh
+!iris
+!iris/Makefile
+!.dockerignore
+!.gitignore
+!Dockerfile
+!LICENSE
+!Makefile
+!README.md
