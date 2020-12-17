@@ -1,5 +1,7 @@
 # tsv-utils
-Dockerized wrapper for:
+Dockerized wrapper for Bash CSV/TSV libraries. Includes:
+
+* [csvkit](https://github.com/wireservice/csvkit)
 * [csvtk](https://github.com/shenwei356/csvtk)
 * [tsv-utils](https://github.com/eBay/tsv-utils)
 

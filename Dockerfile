@@ -1,9 +1,17 @@
 FROM ubuntu
 WORKDIR /src
 
+# Install OS dependencies.
 RUN apt-get update && \
   apt-get upgrade -y && \
-  apt-get install -y curl make
+  apt-get install -y \
+    curl \
+    make \
+    python3.6 \
+    python3-pip
+
+# Install csvkit v1.0.5.
+RUN pip3 install csvkit==1.0.5
 
 # Install csvtk v0.21.0.
 RUN curl -L https://github.com/shenwei356/csvtk/releases/download/v0.21.0/csvtk_linux_amd64.tar.gz | tar xz && \
