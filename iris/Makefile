@@ -8,6 +8,6 @@ raw/iris.csv:
 interim/iris.tsv: raw/iris.csv
 	@mkdir -p interim
 	@cat raw/iris.csv | \
-		/bin/csv2tsv --header | \
-		/bin/tsv-filter --header --not-empty species \
+		csv2tsv --header | \
+		tsv-filter --header --not-empty species \
 		> interim/iris.tsv
