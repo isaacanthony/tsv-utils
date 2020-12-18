@@ -22,3 +22,8 @@ RUN curl -L https://github.com/shenwei356/csvtk/releases/download/v0.21.0/csvtk_
 RUN curl -L https://github.com/eBay/tsv-utils/releases/download/v2.1.2/tsv-utils-v2.1.2_linux-x86_64_ldc2.tar.gz | tar xz && \
   cp -r /src/tsv-utils-v2.1.2_linux-x86_64_ldc2/bin/* /usr/local/bin/ && \
   rm -r /src/tsv-utils-v2.1.2_linux-x86_64_ldc2
+
+# Install xsv v0.13.0.
+RUN curl -L https://github.com/BurntSushi/xsv/releases/download/0.13.0/xsv-0.13.0-x86_64-unknown-linux-musl.tar.gz | tar xz && \
+  cp /src/xsv /usr/local/bin/ && \
+  rm -r /src/xsv
